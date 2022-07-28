@@ -607,10 +607,6 @@ video {
   justify-content: center;
 }
 
-.justify-between{
-  justify-content: space-between;
-}
-
 .gap-y-8{
   row-gap: 2rem;
 }
@@ -644,10 +640,6 @@ video {
 
 .p-16{
   padding: 4rem;
-}
-
-.pl-2{
-  padding-left: 0.5rem;
 }
 
 .font-myFont{
@@ -686,18 +678,9 @@ video {
   text-transform: uppercase;
 }
 
-.italic{
-  font-style: italic;
-}
-
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-500{
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .card{
@@ -733,33 +716,23 @@ video {
   color: rgb(136 136 131 / var(--tw-text-opacity));
 }
 
-.placeholder\:font-bold::-moz-placeholder{
+.btn{
+  cursor: pointer;
+  border-radius: 9999px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
   font-weight: 700;
-}
-
-.placeholder\:font-bold:-ms-input-placeholder{
-  font-weight: 700;
-}
-
-.placeholder\:font-bold::placeholder{
-  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
 }
 
 @media (min-width: 640px){
-  .sm\:flex{
-    display: flex;
-  }
-
   .sm\:h-48{
     height: 12rem;
-  }
-
-  .sm\:flex-none{
-    flex: none;
-  }
-
-  .sm\:flex-col{
-    flex-direction: column;
   }
 
   .sm\:justify-end{
@@ -770,13 +743,9 @@ video {
     font-weight: 700;
   }
 
-  .sm\:font-normal{
-    font-weight: 400;
-  }
-
-  .sm\:text-white{
+  .sm\:text-gray-500{
     --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+    color: rgb(107 114 128 / var(--tw-text-opacity));
   }
 }
 
@@ -799,11 +768,6 @@ video {
 
   .md\:gap-8{
     gap: 2rem;
-  }
-
-  .md\:text-gray-500{
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128 / var(--tw-text-opacity));
   }
 }
 
