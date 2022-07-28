@@ -6,17 +6,17 @@
   <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body class='bg-gradient-to-r from-gray-500 to-gray-100 text-white font-myFont'>
-<div>
-  <div>
-    <nav>
-      <div>
-          <div class='p-4'>
-            <h1 class='text-4xl font-bold italic uppercase pl-2'>
-              <a href="/">Food Ninja</a>
-            </h1>
-          </div>
+
+  <div class='grid md:grid-cols-3'>
+
+  <div class='md:col-span-1'>
+    <nav class='flex justify-between sm:flex-col'>
+      <div class='p-4'>
+        <h1 class='text-3xl font-bold uppercase'>
+          <a href="/">Food Ninja</a>
+        </h1>
       </div>
-      <ul>
+      <ul class='p-4 text-gray-500 sm:text-white'>
         <li>
           <a href="#"><span>Home</span></a>
         </li>
@@ -29,7 +29,8 @@
       </ul>
     </nav>
   </div>
-  <main class='p-16'>
+
+  <main class='p-16 md:col-span-2'>
     <div class='flex justify-center sm:justify-end sm:font-bold md:text-gray-500'>
       <a href="#">Login</a>
       <a class="ml-2" href="#">Signup</a>
@@ -130,6 +131,7 @@
       </div>
     </div>
   </main>
+
 </div>
 </body>
 </html>
