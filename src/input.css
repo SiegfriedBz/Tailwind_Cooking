@@ -5,3 +5,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card {
+  @apply rounded-lg overflow-hidden shadow-md bg-gradient-to-r from-gray-200 to-gray-50 text-gray-500 relative;
+}
