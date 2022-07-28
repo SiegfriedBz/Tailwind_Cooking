@@ -5,21 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body class='bg-gradient-to-l from-cyan-500 to-blue-500 text-white font-myFont'>
+<body class='bg-gradient-to-r from-gray-500 to-gray-100 text-white font-myFont'>
 <div>
   <div>
     <nav>
       <div>
-          <div class='flex justify-center items-center'>
-            <div class="bg-red-500 h-4 w-6"></div>
-            <div class="bg-yellow-500 h-6 w-6"></div>
-            <div class="bg-green-500 h-8 w-6"></div>
-            <h1 class='text-4xl font-bold italic uppercase p-4'>
+          <div class='p-4'>
+            <h1 class='text-4xl font-bold italic uppercase pl-2'>
               <a href="/">Food Ninja</a>
             </h1>
-            <div class="bg-green-500 h-8 w-6"></div>
-            <div class="bg-yellow-500 h-6 w-6"></div>
-            <div class="bg-red-500 h-4 w-6"></div>
           </div>
       </div>
       <ul>
@@ -36,7 +30,7 @@
     </nav>
   </div>
   <main class='p-16'>
-    <div class='flex justify-center sm:justify-end'>
+    <div class='flex justify-center sm:justify-end sm:font-bold md:text-gray-500'>
       <a href="#">Login</a>
       <a class="ml-2" href="#">Signup</a>
     </div>
@@ -47,29 +41,36 @@
     </header>
     <div>
       <h4 class='font-bold mt-12'>Latest Recipes</h4>
-      <div class='border rounded-lg border-white'>
+
+      <div class='mt-8'>
         <!-- Cards go here -->
-        <div>
-          <img class="rounded-lg rounded-sm" src="../src/public/img/curry.jpg" alt="">
-          <div>
-            <span>Curry</span>
-          </div>
-        </div>
-      </div><div>
-        <!-- Cards go here -->
-        <div class='border rounded-lg border-white'>
-          <img class="rounded-lg rounded-sm" src="../src/public/img/noodles.jpg" alt="">
-          <div>
-            <span>Noodles</span>
+        <div class='rounded-lg overflow-hidden shadow-md bg-gradient-to-r from-gray-200 to-gray-50 text-gray-500 '>
+          <img class="rounded-lg w-full" src="../src/public/img/curry.jpg" alt="">
+          <div class='flex flex-col m-4'>
+            <span class='font-bold text-2xl'>Curry</span>
+            <span class='font-light text-sm'>Recipe by Jan</span>
           </div>
         </div>
       </div>
-      <div>
+
+      <div class='mt-8'>
         <!-- Cards go here -->
-        <div class='border rounded-lg border-white'>
-          <img class="rounded-lg rounded-sm" src="../src/public/img/stew.jpg" alt="">
-          <div>
-            <span>Stew</span>
+        <div class='rounded-lg overflow-hidden shadow-md bg-gradient-to-r from-gray-200 to-gray-50 text-gray-500 '>
+          <img class="rounded-lg w-full" src="../src/public/img/noodles.jpg" alt="">
+          <div class='flex flex-col m-4'>
+            <span class='font-bold text-2xl'>Noodles</span>
+            <span class='font-light text-sm'>Recipe by Luo</span>
+          </div>
+        </div>
+      </div>
+
+      <div class='mt-8'>
+        <!-- Cards go here -->
+        <div class='rounded-lg overflow-hidden shadow-xl bg-gradient-to-r from-gray-200 to-gray-50 text-gray-500 '>
+          <img class="rounded-lg w-full" src="../src/public/img/stew.jpg" alt="">
+          <div class='flex flex-col m-4'>
+            <span class='font-bold text-2xl'>Stew</span>
+            <span class='font-light text-sm'>Recipe by Mike</span>
           </div>
         </div>
       </div>
@@ -87,6 +88,11 @@
     </div>
 
   </main>
+</div>
+<div class='flex justify-evenly w-full fixed bottom-0 z-50 px-6 py-3 rounded-sm bg-purple-600 text-white'>
+  We use coookies for..
+  <button class='text-white bg-purple-600 py-1 px-2 rounded'>decline</button>
+  <button class='text-purple-600 bg-white py-1 px-2 rounded'>allow</button>
 </div>
 </body>
 </html>
