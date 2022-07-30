@@ -851,6 +851,22 @@ video {
   background-color: rgb(136 136 131 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-opacity-75:hover{
+  --tw-bg-opacity: 0.75;
+}
+
+.hover\:bg-opacity-50:hover{
+  --tw-bg-opacity: 0.5;
+}
+
+.hover\:bg-opacity-100:hover{
+  --tw-bg-opacity: 1;
+}
+
+.hover\:bg-opacity-25:hover{
+  --tw-bg-opacity: 0.25;
+}
+
 .hover\:text-gray-200:hover{
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
@@ -869,6 +885,12 @@ video {
 .hover\:text-gray-400:hover{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.hover\:shadow-inner:hover{
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @media (min-width: 640px){
